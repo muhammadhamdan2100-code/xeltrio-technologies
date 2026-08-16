@@ -1,0 +1,275 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand — extracted from Xetrio Technologies logo */
+  --color-bg-primary: #050816;
+  --color-bg-secondary: #080c1e;
+  --color-bg-elevated: #0d1328;
+  --color-bg-elevated-2: #121a36;
+
+  --color-text-primary: #f6f8fc;
+  --color-text-secondary: #aab4cc;
+  --color-text-muted: #626d89;
+
+  --color-accent-primary: #4f8cff;
+  --color-accent-secondary: #8ab4ff;
+  --color-accent-deep: #2452c9;
+  --color-silver: #c3cadb;
+
+  --color-border: rgba(198, 210, 255, 0.12);
+  --color-border-subtle: rgba(198, 210, 255, 0.06);
+
+  --color-success: #37d399;
+  --color-warning: #f5b74d;
+  --color-danger: #ef5c5c;
+  --color-info: #4f8cff;
+
+  --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Self-hosted via @fontsource (see app/layout.tsx) */
+  --font-space-grotesk: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-inter: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-jetbrains: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@theme inline {
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-bg-elevated: var(--color-bg-elevated);
+  --color-bg-elevated-2: var(--color-bg-elevated-2);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent-primary: var(--color-accent-primary);
+  --color-accent-secondary: var(--color-accent-secondary);
+  --color-accent-deep: var(--color-accent-deep);
+  --color-silver: var(--color-silver);
+  --color-border: var(--color-border);
+  --color-border-subtle: var(--color-border-subtle);
+
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  background: var(--color-bg-primary);
+}
+
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-accent-primary);
+  color: #050816;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-sans);
+}
+
+.font-mono-tech {
+  font-family: var(--font-mono), monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-elevated-2);
+  border-radius: 8px;
+  border: 2px solid var(--color-bg-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-deep);
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-accent-secondary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.grid-lines {
+  background-image:
+    linear-gradient(to right, var(--color-border-subtle) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-border-subtle) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.text-gradient-accent {
+  background: linear-gradient(120deg, #ffffff 0%, var(--color-accent-secondary) 55%, var(--color-accent-primary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, rgba(18, 26, 54, 0.55), rgba(13, 19, 40, 0.35));
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Premium cursor system                                              */
+/* ------------------------------------------------------------------ */
+
+/* Only hide the native cursor once the custom cursor has confirmed it
+   can run (desktop, fine pointer, motion allowed) — see CustomCursor.tsx. */
+.has-custom-cursor,
+.has-custom-cursor a,
+.has-custom-cursor button {
+  cursor: none !important;
+}
+
+.xeltrio-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent-primary);
+  box-shadow: 0 0 8px 2px rgba(79, 140, 255, 0.7);
+  pointer-events: none;
+  will-change: transform;
+  z-index: 2147483001;
+}
+
+.xeltrio-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(79, 140, 255, 0.55);
+  opacity: 0.25;
+  pointer-events: none;
+  will-change: transform;
+  box-shadow: 0 0 12px 2px rgba(79, 140, 255, 0.22);
+  z-index: 2147483000;
+  transition:
+    width 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    height 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    border-radius 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s ease,
+    opacity 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.xeltrio-cursor-ring[data-zone="button"] {
+  opacity: 0.55;
+  box-shadow: 0 0 24px 6px rgba(79, 140, 255, 0.45);
+}
+
+.xeltrio-cursor-ring[data-zone="link"] {
+  width: 72px;
+  height: 30px;
+  border-radius: 999px;
+  opacity: 0.42;
+  box-shadow: 0 0 18px 4px rgba(79, 140, 255, 0.32);
+}
+
+.xeltrio-cursor-ring[data-zone="card"] {
+  opacity: 0.4;
+  box-shadow: 0 0 20px 5px rgba(79, 140, 255, 0.28);
+}
+
+.xeltrio-cursor-ring[data-hero="true"] {
+  border-color: rgba(138, 180, 255, 0.8);
+}
+
+.xeltrio-cursor-particle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-accent-secondary);
+  pointer-events: none;
+  will-change: transform, opacity;
+  opacity: 0;
+  z-index: 2147482999;
+}
+
+.xeltrio-cursor-label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--color-text-primary);
+  background: rgba(13, 19, 40, 0.7);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+  z-index: 2147483002;
+  backdrop-filter: blur(6px);
+}
+
+.xeltrio-cursor-ripple {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  margin-top: -5px;
+  border-radius: 50%;
+  border: 1px solid rgba(79, 140, 255, 0.6);
+  pointer-events: none;
+  z-index: 2147482998;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xeltrio-cursor-dot,
+  .xeltrio-cursor-ring,
+  .xeltrio-cursor-particle,
+  .xeltrio-cursor-label,
+  .xeltrio-cursor-ripple {
+    display: none !important;
+  }
+}
