@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CmsSections, cmsMetadata } from "@/components/cms/CmsPage";
 import {
   GraduationCap,
   HeartPulse,
@@ -15,7 +16,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { INDUSTRIES } from "@/lib/constants";
 
-export const metadata: Metadata = {
+const fallbackMetadata: Metadata = {
   title: "Industries — Xeltrio Technologies",
   description:
     "The industries the Xeltrio ecosystem is built for — education, healthcare, retail, manufacturing, restaurant, real estate, logistics, SMEs, and enterprise.",
@@ -33,7 +34,11 @@ const INDUSTRY_ICONS = [
   Landmark,
 ];
 
-export default function IndustriesPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  return cmsMetadata("industries", fallbackMetadata);
+}
+
+export default async function IndustriesPage() {
   return (
     <PageShell>
       <PageHeader
@@ -66,6 +71,7 @@ export default function IndustriesPage() {
           </RevealGroup>
         </div>
       </section>
+      <CmsSections slug="industries" />
     </PageShell>
   );
 }

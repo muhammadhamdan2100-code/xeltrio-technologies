@@ -1,6 +1,10 @@
 node_modules
 .next
 out
+.env
 .env*
 *.log
 .env.local
+tsconfig.tsbuildinfo
+supabase/.temp/
+tmp-audit/

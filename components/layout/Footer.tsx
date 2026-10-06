@@ -59,7 +59,7 @@ export function Footer() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-[color:var(--color-border-subtle)] pt-8 md:flex-row md:items-center">
           <p className="text-xs text-[color:var(--color-text-muted)]">
-            © {new Date().getFullYear()} Xeltrio Technologies Private Limited. All rights reserved.
+            © {new Date().getFullYear()} Xeltrio Technologies. All rights reserved.
           </p>
           <p className="font-mono-tech text-xs text-[color:var(--color-text-muted)]">
             Founded by Muhammad Hamdan

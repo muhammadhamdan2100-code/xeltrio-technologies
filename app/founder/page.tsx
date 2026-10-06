@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CmsSections, cmsMetadata } from "@/components/cms/CmsPage";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { PageShell } from "@/components/layout/PageShell";
@@ -12,13 +13,17 @@ import {
   FOUNDER_COMPANY_VISION,
 } from "@/lib/constants";
 
-export const metadata: Metadata = {
+const fallbackMetadata: Metadata = {
   title: "Founder — Muhammad Hamdan | Xeltrio Technologies",
   description:
     "Muhammad Hamdan, Founder & CEO of Xeltrio Technologies — the story, mission, vision, and roadmap behind an AI-native enterprise operating system.",
 };
 
-export default function FounderPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  return cmsMetadata("founder", fallbackMetadata);
+}
+
+export default async function FounderPage() {
   return (
     <PageShell>
       {/* Premium Hero */}
@@ -167,6 +172,7 @@ export default function FounderPage() {
           </Reveal>
         </div>
       </section>
+      <CmsSections slug="founder" />
     </PageShell>
   );
 }

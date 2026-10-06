@@ -1,0 +1,52 @@
+SUPABASE DEEP AUDIT — project yparzhgzhpwewyrjhqud — captured 2026-10-05 via SQL Editor (read-only queries only)
+All queries were read-only SELECTs. No writes, no schema changes, no data modification.
+
+SECURITY / RLS
+- tables (public, relkind=r): 23
+- rls_enabled: 23 / 23 (all tables have RLS enabled; no_rls list = NULL/empty)
+- total policies (public schema): 92
+- policy role distribution: public:90 | anon:2 | authenticated:2
+- anon policies (exact): contact_messages:INSERT, newsletter_subscribers:INSERT  (the only anonymous write paths — correct pattern for public site)
+- write policies for non-anon (INSERT/UPDATE/DELETE) exist on nearly all content tables, attached to `public` role but GATED via helper functions:
+  - verified sample: products UPDATE policy qual = `( SELECT is_staff_editor() AS is_staff_editor)`
+  - helper functions present: handle_new_user, is_admin, is_staff_editor, set_updated_at
+  - conclusion: anonymous users pass no write check (auth.uid() null); authenticated staff/admin gated by profiles.role
+- indexes (public schema): 44 (incl. FK indexes per migration 013)
+
+AUTH
+- auth.users count: 2
+- profiles table: 2 rows — role values: [admin, staff] (RBAC role system seeded; emails not printed per constraints)
+
+STORAGE
+- buckets: 7 — company-assets, founder, hm-signature, logos, media, news, products
+  (matches README claim of 7 buckets; bucket id=name)
+
+MIGRATIONS (15 total, full list with timestamps)
+- 20260802154455 001_roles_and_helpers
+- 20260802154516 002_company_and_founder
+- 20260802154552 003_content_items
+- 20260802154632 004_products_industries_solutions_roadmap
+- 20260802154659 005_news_press_careers_testimonials_faqs
+- 20260802154728 006_contact_and_newsletter
+- 20260803003353 007_brand_pages_and_navigation
+- 20260803003412 008_storage_buckets
+- 20260803003502 009_security_hardening
+- 20260803003604 010_fix_function_grants
+- 20260803003635 011_finalize_function_grants
+- 20260803003723 012_split_write_policies_for_perf
+- 20260803003735 013_missing_fk_indexes
+- 20260803003805 014_consolidate_select_policies
+- 20260803182659 015_seed_solutions
+Schedule: 001–006 on 2026-08-02, 007–014 on 2026-08-03, 015 on 2026-08-03 (later same day in UTC).
+
+DASHBOARD STATE
+- Plan: FREE (nano, ap-south-1 Mumbai). No backups configured (risk note).
+- Advisor Center: no security or performance issues found.
+- GitHub integration: connected (muhammadhamdan2100-code/xeltrio-technologies) — dashboard shows branch `main` = PRODUCTION, no branches.
+- Last migration badge: 015_seed_solutions.
+
+Seeded content summary (row counts):
+company 1, founder 1, contact_messages 1, content_items 32, faqs 5, hm_signature_fragrances 4, industries 9, legal_pages 4,
+product_categories 3, products 12, profiles 2, roadmap_steps 10, solutions 9 — total 101 rows; 10 tables empty (announcements, brand_pages, careers_jobs,
+footer_links, navigation_items, news_articles, newsletter_subscribers, press_releases, resources, testimonials).
+tests note: contact_messages has 1 row — a real or test submission exists in the cloud DB but the repo ContactForm only has a setTimeout simulation.

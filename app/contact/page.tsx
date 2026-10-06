@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CmsSections, cmsMetadata } from "@/components/cms/CmsPage";
 import Link from "next/link";
 import { Mail, Phone, MapPin, Clock, Share2, ShieldCheck, Bot, Zap, Globe2, Handshake } from "lucide-react";
 import { PageShell } from "@/components/layout/PageShell";
@@ -9,8 +10,9 @@ import { ContactFAQ } from "@/components/contact/ContactFAQ";
 import { FloatingParticles } from "@/components/contact/FloatingParticles";
 import { SocialMediaLinks } from "@/components/contact/SocialMediaLinks";
 import { CONTACT_INFO_CARDS, WHY_CONTACT_XELTRIO } from "@/lib/constants";
+import { getPublicSettings, settingText } from "@/lib/cms/public";
 
-export const metadata: Metadata = {
+const fallbackMetadata: Metadata = {
   title: "Contact — Xeltrio Technologies",
   description:
     "Let's build the future together — reach the Xeltrio Technologies team for AI automation, BusinessOS, enterprise software, or strategic technology consulting.",
@@ -19,7 +21,20 @@ export const metadata: Metadata = {
 const INFO_ICONS = [Mail, Phone, MapPin, Clock, Share2];
 const WHY_ICONS = [ShieldCheck, Bot, Zap, Globe2, Handshake];
 
-export default function ContactPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  return cmsMetadata("contact", fallbackMetadata);
+}
+
+/** Settings-configured values override the shipped defaults, field by field. */
+const SETTINGS_KEYS = ["contact.email", "contact.phone", "contact.address", "contact.hours"];
+
+export default async function ContactPage() {
+  const settings = await getPublicSettings();
+  const infoCards = CONTACT_INFO_CARDS.map((card, index) => {
+    const key = SETTINGS_KEYS[index];
+    const configured = key ? settingText(settings, key) : null;
+    return configured ? { ...card, value: configured } : card;
+  });
   return (
     <PageShell>
       {/* 1. Premium Hero */}
@@ -79,7 +94,7 @@ export default function ContactPage() {
           </Reveal>
 
           <RevealGroup className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
-            {CONTACT_INFO_CARDS.map((card, i) => {
+            {infoCards.map((card, i) => {
               const Icon = INFO_ICONS[i];
               return (
                 <RevealItem key={card.label}>
@@ -224,6 +239,7 @@ export default function ContactPage() {
           </Reveal>
         </div>
       </section>
+      <CmsSections slug="contact" />
     </PageShell>
   );
 }

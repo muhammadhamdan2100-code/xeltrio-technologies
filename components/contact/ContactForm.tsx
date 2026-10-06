@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { CONTACT_SERVICE_OPTIONS, CONTACT_BUDGET_OPTIONS, CONTACT_TIMELINE_OPTIONS } from "@/lib/constants";
+import { submitContactAction } from "@/app/actions/contact";
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -22,10 +23,16 @@ export function ContactForm() {
     setError(null);
     setSubmitting(true);
 
-    // Simulate form submission
+    // Real intake: writes through the server action, which enforces validation
+    // and the public insert policy. The success screen only appears once the
+    // row exists.
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setSubmitted(true);
+      const result = await submitContactAction(new FormData(e.currentTarget));
+      if (result.ok) {
+        setSubmitted(true);
+      } else {
+        setError(result.message ?? "We could not send that just now. Please try again.");
+      }
     } catch {
       setError("Something went wrong sending that — please try again in a moment.");
     } finally {

@@ -1,0 +1,316 @@
+uid=6_1 RootWebArea "products | Table Editor | xeltrio technologies Project | xeltrio technologies Org | Supabase" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/editor/17659"
+  uid=6_2 link "Skip to content" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/editor/17659#main"
+    uid=6_3 StaticText "Skip to content"
+  uid=6_4 banner
+    uid=6_5 link "Supabase Back to organization home" focusable url="https://supabase.com/dashboard/org/uxjfqzxpxteeysjcrzko"
+      uid=6_6 image "Supabase" url="https://supabase.com/dashboard/img/supabase-logo.svg"
+      uid=6_7 StaticText "Back to organization home"
+    uid=6_8 link "xeltrio technologies Org FREE" focusable url="https://supabase.com/dashboard/org/uxjfqzxpxteeysjcrzko"
+      uid=6_9 StaticText "xeltrio technologies Org"
+      uid=6_10 StaticText "FREE"
+    uid=6_11 button "Show organizations" expandable focusable hasPopup="dialog" invalid="false"
+    uid=6_12 link "xeltrio technologies Project" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud"
+      uid=6_13 StaticText "xeltrio technologies Project"
+    uid=6_14 button "Show organization projects" expandable focusable hasPopup="dialog" invalid="false"
+    uid=6_15 link "main PRODUCTION" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud"
+      uid=6_16 StaticText "main"
+      uid=6_17 StaticText "PRODUCTION"
+    uid=6_18 button "Show project branches" expandable focusable hasPopup="dialog" invalid="false"
+    uid=6_19 button "Connect" focusable invalid="false"
+    uid=6_20 button "Feedback" expandable focusable hasPopup="dialog" invalid="false"
+    uid=6_21 button "Search..." expandable focusable hasPopup="dialog" invalid="false"
+    uid=6_22 button "Help" focusable invalid="false"
+    uid=6_23 button "Advisor Center" focusable invalid="false"
+    uid=6_24 button "SQL Editor" focusable invalid="false"
+    uid=6_25 button "AI Assistant" focusable invalid="false"
+    uid=6_26 button "muhammadhamdan2100-code" expandable focusable hasPopup="menu" invalid="false"
+  uid=6_27 navigation
+    uid=6_28 link "Project Overview" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud"
+      uid=6_29 StaticText "Project Overview"
+    uid=6_30 link "Table Editor" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/editor"
+      uid=6_31 StaticText "Table Editor"
+    uid=6_32 link "SQL Editor" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/sql"
+      uid=6_33 StaticText "SQL Editor"
+    uid=6_34 link "Database" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/database/schemas"
+      uid=6_35 StaticText "Database"
+    uid=6_36 link "Authentication" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/auth/users"
+      uid=6_37 StaticText "Authentication"
+    uid=6_38 link "Storage" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/storage/files"
+      uid=6_39 StaticText "Storage"
+    uid=6_40 link "Edge Functions" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/functions"
+      uid=6_41 StaticText "Edge Functions"
+    uid=6_42 link "Compute NEW" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/compute"
+      uid=6_43 StaticText "Compute"
+      uid=6_44 StaticText "NEW"
+    uid=6_45 link "Realtime" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/realtime/inspector"
+      uid=6_46 StaticText "Realtime"
+    uid=6_47 link "Advisors" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/advisors/security"
+      uid=6_48 StaticText "Advisors"
+    uid=6_49 link "Observability" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/observability"
+      uid=6_50 StaticText "Observability"
+    uid=6_51 link "Logs" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/logs"
+      uid=6_52 StaticText "Logs"
+    uid=6_53 link "Integrations" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/integrations"
+      uid=6_54 StaticText "Integrations"
+    uid=6_55 link "Project Settings" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/settings/general"
+      uid=6_56 StaticText "Project Settings"
+  uid=6_57 button "Sidebar control" expandable focusable hasPopup="menu" invalid="false"
+  uid=6_58 main focusable
+    uid=6_59 heading "Table Editor" level="4"
+    uid=6_60 combobox "Schema public" expandable focusable hasPopup="dialog" invalid="false" value="schema public"
+    uid=6_61 button "New table" description="Create a new table" focusable invalid="false"
+    uid=6_62 StaticText "Search tables"
+    uid=6_63 textbox "Search tables..." editable="plaintext" focusable invalid="false" settable
+    uid=6_64 button expandable focusable hasPopup="menu" invalid="false"
+    uid=6_65 button "Filter" expandable focusable hasPopup="dialog" invalid="false"
+    uid=6_66 button "View announcements" focusable
+      uid=6_67 button focusable invalid="false"
+      uid=6_68 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_69 button "View brand_pages" focusable
+      uid=6_70 button focusable invalid="false"
+      uid=6_71 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_72 button "View careers_jobs" focusable
+      uid=6_73 button focusable invalid="false"
+      uid=6_74 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_75 button "View company" focusable
+      uid=6_76 button focusable invalid="false"
+      uid=6_77 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_78 button "View contact_messages" focusable
+      uid=6_79 button focusable invalid="false"
+      uid=6_80 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_81 button "View content_items" focusable
+      uid=6_82 button focusable invalid="false"
+      uid=6_83 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_84 button "View faqs" focusable
+      uid=6_85 button focusable invalid="false"
+      uid=6_86 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_87 button "View footer_links" focusable
+      uid=6_88 button focusable invalid="false"
+      uid=6_89 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_90 button "View founder" focusable
+      uid=6_91 button focusable invalid="false"
+      uid=6_92 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_93 button "View hm_signature_fragrances" focusable
+      uid=6_94 button focusable invalid="false"
+      uid=6_95 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_96 button "View industries" focusable
+      uid=6_97 button focusable invalid="false"
+      uid=6_98 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_99 button "View legal_pages" focusable
+      uid=6_100 button focusable invalid="false"
+      uid=6_101 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_102 button "View navigation_items" focusable
+      uid=6_103 button focusable invalid="false"
+      uid=6_104 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_105 button "View news_articles" focusable
+      uid=6_106 button focusable invalid="false"
+      uid=6_107 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_108 button "View newsletter_subscribers" focusable
+      uid=6_109 button focusable invalid="false"
+      uid=6_110 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_111 button "View press_releases" focusable
+      uid=6_112 button focusable invalid="false"
+      uid=6_113 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_114 button "View product_categories" focusable
+      uid=6_115 button focusable invalid="false"
+      uid=6_116 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_117 button "View products" focusable
+      uid=6_118 button focusable invalid="false"
+      uid=6_119 button "Table exposed via Data API" focusable invalid="false"
+      uid=6_120 button "More options for products" expandable focusable hasPopup="menu" invalid="false"
+    uid=6_121 button "View profiles" focusable
+      uid=6_122 button focusable invalid="false"
+      uid=6_123 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_124 button "View resources" focusable
+      uid=6_125 button focusable invalid="false"
+      uid=6_126 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_127 button "View roadmap_steps" focusable
+      uid=6_128 button focusable invalid="false"
+      uid=6_129 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_130 button "View solutions" focusable
+      uid=6_131 button focusable invalid="false"
+      uid=6_132 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_133 button "View testimonials" focusable
+      uid=6_134 button focusable invalid="false"
+      uid=6_135 button "Table exposed via Data API" focusable invalid="false"
+    uid=6_136 separator controls="panel-left" focusable orientation="vertical" settable value="28.256000518798828" valuemax="56.512001037597656" valuemin="28.256000518798828"
+    uid=6_137 main
+      uid=6_138 button "Collapse sidebar" focusable invalid="false"
+      uid=6_139 tablist focusable orientation="horizontal"
+        uid=6_140 tab "products" focusable invalid="false" selectable selected
+        uid=6_141 button "Close tab" focusable invalid="false"
+        uid=6_142 button focusable invalid="false"
+      uid=6_143 textbox "Filter by id, category_id, name... or ask AI" editable="plaintext" focusable invalid="false" settable
+      uid=6_144 button "Sort" expandable focusable hasPopup="dialog" invalid="false"
+      uid=6_145 link "RLS policies" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/database/policies?search=products&schema=public"
+        uid=6_146 StaticText "RLS"
+        uid=6_147 StaticText "policies"
+      uid=6_148 button "Role postgres" expandable focusable hasPopup="dialog" invalid="false"
+      uid=6_149 button "More options for products" expandable focusable hasPopup="menu" invalid="false"
+      uid=6_150 button "Refresh table data" focusable invalid="false"
+      uid=6_151 button "Insert" expandable focusable hasPopup="menu" invalid="false"
+      uid=6_152 generic focusable hasPopup="menu"
+      uid=6_153 columnheader "Select All" focusable selectable
+        uid=6_154 checkbox "Select All" checked="false" focusable invalid="false"
+      uid=6_155 columnheader "id uuid Column id actions" focusable selectable
+        uid=6_156 button "id uuid" describedby="DndDescribedBy-1" description="To pick up a draggable item, press the space bar. While dragging, use the arrow keys to move the item. Press space again to drop the item in its new position, or press escape to cancel." focusable roledescription="sortable"
+          uid=6_157 button focusable invalid="false"
+          uid=6_158 button "id" focusable invalid="false"
+        uid=6_159 button "Column id actions" expandable focusable hasPopup="menu" invalid="false"
+      uid=6_160 columnheader "category_id uuid Column category_id actions" focusable selectable
+        uid=6_161 button "category_id uuid" describedby="DndDescribedBy-1" description="To pick up a draggable item, press the space bar. While dragging, use the arrow keys to move the item. Press space again to drop the item in its new position, or press escape to cancel." focusable roledescription="sortable"
+          uid=6_162 button focusable invalid="false"
+          uid=6_163 button "category_id" focusable invalid="false"
+        uid=6_164 button "Column category_id actions" expandable focusable hasPopup="menu" invalid="false"
+      uid=6_165 columnheader "name text Column name actions" focusable selectable
+        uid=6_166 button "name text" describedby="DndDescribedBy-1" description="To pick up a draggable item, press the space bar. While dragging, use the arrow keys to move the item. Press space again to drop the item in its new position, or press escape to cancel." focusable roledescription="sortable"
+          uid=6_167 button "name" focusable invalid="false"
+        uid=6_168 button "Column name actions" expandable focusable hasPopup="menu" invalid="false"
+      uid=6_169 columnheader "slug text Column slug actions" focusable selectable
+        uid=6_170 button "slug text" describedby="DndDescribedBy-1" description="To pick up a draggable item, press the space bar. While dragging, use the arrow keys to move the item. Press space again to drop the item in its new position, or press escape to cancel." focusable roledescription="sortable"
+          uid=6_171 button "slug" focusable invalid="false"
+        uid=6_172 button "Column slug actions" expandable focusable hasPopup="menu" invalid="false"
+      uid=6_173 gridcell "Select" focusable readonly selectable
+        uid=6_174 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_175 button focusable invalid="false"
+      uid=6_176 gridcell "12cc2418-4399-4676-9fb2-7accc450b663" focusable readonly selectable
+        uid=6_177 StaticText "12cc2418-4399-4676-9fb2-7accc450b663"
+      uid=6_178 gridcell "NULL" focusable readonly selectable
+        uid=6_179 StaticText "NULL"
+      uid=6_180 gridcell "HospitalOS" focusable selectable
+        uid=6_181 StaticText "HospitalOS"
+      uid=6_182 gridcell "hospitalos" focusable selectable
+        uid=6_183 StaticText "hospitalos"
+      uid=6_184 gridcell "Select" focusable readonly selectable
+        uid=6_185 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_186 button focusable invalid="false"
+      uid=6_187 gridcell "140481e3-b477-4dff-be8e-cfe36e177d4c" focusable readonly selectable
+        uid=6_188 StaticText "140481e3-b477-4dff-be8e-cfe36e177d4c"
+      uid=6_189 gridcell "NULL" focusable readonly selectable
+        uid=6_190 StaticText "NULL"
+      uid=6_191 gridcell "LogisticsOS" focusable selectable
+        uid=6_192 StaticText "LogisticsOS"
+      uid=6_193 gridcell "logisticsos" focusable selectable
+        uid=6_194 StaticText "logisticsos"
+      uid=6_195 gridcell "Select" focusable readonly selectable
+        uid=6_196 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_197 button focusable invalid="false"
+      uid=6_198 gridcell "1bdf749a-eb40-4fc5-8bdb-18eedcbea256" focusable readonly selectable
+        uid=6_199 StaticText "1bdf749a-eb40-4fc5-8bdb-18eedcbea256"
+      uid=6_200 gridcell "NULL" focusable readonly selectable
+        uid=6_201 StaticText "NULL"
+      uid=6_202 gridcell "RestaurantOS" focusable selectable
+        uid=6_203 StaticText "RestaurantOS"
+      uid=6_204 gridcell "restaurantos" focusable selectable
+        uid=6_205 StaticText "restaurantos"
+      uid=6_206 gridcell "Select" focusable readonly selectable
+        uid=6_207 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_208 button focusable invalid="false"
+      uid=6_209 gridcell "1c810179-b8dc-4646-b102-cf2fb8aa8329" focusable readonly selectable
+        uid=6_210 StaticText "1c810179-b8dc-4646-b102-cf2fb8aa8329"
+      uid=6_211 gridcell "NULL" focusable readonly selectable
+        uid=6_212 StaticText "NULL"
+      uid=6_213 gridcell "Finance" focusable selectable
+        uid=6_214 StaticText "Finance"
+      uid=6_215 gridcell "finance" focusable selectable
+        uid=6_216 StaticText "finance"
+      uid=6_217 gridcell "Select" focusable readonly selectable
+        uid=6_218 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_219 button focusable invalid="false"
+      uid=6_220 gridcell "3a50dc07-c786-4e2a-beb0-667ccf9f5f16" focusable readonly selectable
+        uid=6_221 StaticText "3a50dc07-c786-4e2a-beb0-667ccf9f5f16"
+      uid=6_222 gridcell "NULL" focusable readonly selectable
+        uid=6_223 StaticText "NULL"
+      uid=6_224 gridcell "BusinessOS" focusable selectable
+        uid=6_225 StaticText "BusinessOS"
+      uid=6_226 gridcell "businessos" focusable selectable
+        uid=6_227 StaticText "businessos"
+      uid=6_228 gridcell "Select" focusable readonly selectable
+        uid=6_229 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_230 button focusable invalid="false"
+      uid=6_231 gridcell "454869d3-bf3a-4c1f-be0a-fbaf58e0a3e5" focusable readonly selectable
+        uid=6_232 StaticText "454869d3-bf3a-4c1f-be0a-fbaf58e0a3e5"
+      uid=6_233 gridcell "NULL" focusable readonly selectable
+        uid=6_234 StaticText "NULL"
+      uid=6_235 gridcell "RetailOS" focusable selectable
+        uid=6_236 StaticText "RetailOS"
+      uid=6_237 gridcell "retailos" focusable selectable
+        uid=6_238 StaticText "retailos"
+      uid=6_239 gridcell "Select" focusable readonly selectable
+        uid=6_240 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_241 button focusable invalid="false"
+      uid=6_242 gridcell "6449b7cc-032e-4142-8e49-b7d882850b99" focusable readonly selectable
+        uid=6_243 StaticText "6449b7cc-032e-4142-8e49-b7d882850b99"
+      uid=6_244 gridcell "NULL" focusable readonly selectable
+        uid=6_245 StaticText "NULL"
+      uid=6_246 gridcell "EducationOS" focusable selectable
+        uid=6_247 StaticText "EducationOS"
+      uid=6_248 gridcell "educationos" focusable selectable
+        uid=6_249 StaticText "educationos"
+      uid=6_250 gridcell "Select" focusable readonly selectable
+        uid=6_251 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_252 button focusable invalid="false"
+      uid=6_253 gridcell "7443a0b9-6cee-4b59-a30a-2e50b3a8e7c5" focusable readonly selectable
+        uid=6_254 StaticText "7443a0b9-6cee-4b59-a30a-2e50b3a8e7c5"
+      uid=6_255 gridcell "NULL" focusable readonly selectable
+        uid=6_256 StaticText "NULL"
+      uid=6_257 gridcell "Future AI Products" focusable selectable
+        uid=6_258 StaticText "Future AI Products"
+      uid=6_259 gridcell "future-ai-products" focusable selectable
+        uid=6_260 StaticText "future-ai-products"
+      uid=6_261 gridcell "Select" focusable readonly selectable
+        uid=6_262 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_263 button focusable invalid="false"
+      uid=6_264 gridcell "c1ce87a4-9262-4b6e-a516-e2137a98e45a" focusable readonly selectable
+        uid=6_265 StaticText "c1ce87a4-9262-4b6e-a516-e2137a98e45a"
+      uid=6_266 gridcell "NULL" focusable readonly selectable
+        uid=6_267 StaticText "NULL"
+      uid=6_268 gridcell "Inventory" focusable selectable
+        uid=6_269 StaticText "Inventory"
+      uid=6_270 gridcell "inventory" focusable selectable
+        uid=6_271 StaticText "inventory"
+      uid=6_272 gridcell "Select" focusable readonly selectable
+        uid=6_273 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_274 button focusable invalid="false"
+      uid=6_275 gridcell "ea3d8c00-bb8e-48d0-baeb-516ddd037cf2" focusable readonly selectable
+        uid=6_276 StaticText "ea3d8c00-bb8e-48d0-baeb-516ddd037cf2"
+      uid=6_277 gridcell "NULL" focusable readonly selectable
+        uid=6_278 StaticText "NULL"
+      uid=6_279 gridcell "HRMS" focusable selectable
+        uid=6_280 StaticText "HRMS"
+      uid=6_281 gridcell "hrms" focusable selectable
+        uid=6_282 StaticText "hrms"
+      uid=6_283 gridcell "Select" focusable readonly selectable
+        uid=6_284 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_285 button focusable invalid="false"
+      uid=6_286 gridcell "f230db8a-fdbd-4bc0-b842-b7a50cdcde1a" focusable readonly selectable
+        uid=6_287 StaticText "f230db8a-fdbd-4bc0-b842-b7a50cdcde1a"
+      uid=6_288 gridcell "NULL" focusable readonly selectable
+        uid=6_289 StaticText "NULL"
+      uid=6_290 gridcell "ManufacturingOS" focusable selectable
+        uid=6_291 StaticText "ManufacturingOS"
+      uid=6_292 gridcell "manufacturingos" focusable selectable
+        uid=6_293 StaticText "manufacturingos"
+      uid=6_294 gridcell "Select" focusable readonly selectable
+        uid=6_295 checkbox "Select" checked="false" focusable invalid="false"
+        uid=6_296 button focusable invalid="false"
+      uid=6_297 gridcell "fb15744f-03f7-4293-9ba5-d5c8ff977c3e" focusable readonly selectable
+        uid=6_298 StaticText "fb15744f-03f7-4293-9ba5-d5c8ff977c3e"
+      uid=6_299 gridcell "NULL" focusable readonly selectable
+        uid=6_300 StaticText "NULL"
+      uid=6_301 gridcell "CRM" focusable selectable
+        uid=6_302 StaticText "CRM"
+      uid=6_303 gridcell "crm" focusable selectable
+        uid=6_304 StaticText "crm"
+      uid=6_305 button "Previous page" disableable disabled invalid="false"
+      uid=6_306 StaticText "Page"
+      uid=6_307 textbox editable="plaintext" focusable invalid="false" settable value="1"
+      uid=6_308 StaticText "of"
+      uid=6_309 StaticText "1"
+      uid=6_310 button "Next page" disableable disabled invalid="false"
+      uid=6_311 button "100 rows" expandable focusable hasPopup="menu" invalid="false"
+        uid=6_312 generic focusable
+      uid=6_313 StaticText "12 records"
+      uid=6_314 button "Definition" focusable invalid="false" pressed="false"
+      uid=6_315 button "Data" focusable invalid="false" pressed="true"
+  uid=6_316 StaticText "Table Editor | Supabase"

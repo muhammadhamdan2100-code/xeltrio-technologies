@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CmsSections, cmsMetadata } from "@/components/cms/CmsPage";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { PageShell } from "@/components/layout/PageShell";
@@ -6,13 +7,17 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { SOLUTIONS } from "@/lib/constants";
 
-export const metadata: Metadata = {
+const fallbackMetadata: Metadata = {
   title: "Solutions — Xeltrio Technologies",
   description:
     "How BusinessOS solves real operational problems across education, healthcare, retail, manufacturing, logistics, and more.",
 };
 
-export default function SolutionsPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  return cmsMetadata("solutions", fallbackMetadata);
+}
+
+export default async function SolutionsPage() {
   return (
     <PageShell>
       <PageHeader
@@ -82,6 +87,7 @@ export default function SolutionsPage() {
           </Reveal>
         </div>
       </section>
+      <CmsSections slug="solutions" />
     </PageShell>
   );
 }

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { CmsSections, cmsMetadata } from "@/components/cms/CmsPage";
 import { Users, Lightbulb, GraduationCap, TrendingUp } from "lucide-react";
 import { PageShell } from "@/components/layout/PageShell";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/Reveal";
 import { CAREERS_PILLARS } from "@/lib/constants";
 
-export const metadata: Metadata = {
+const fallbackMetadata: Metadata = {
   title: "Careers — Xeltrio Technologies",
   description:
     "What it's like to build at Xeltrio Technologies — culture, innovation, learning, and future growth. Open roles will be posted here as the team grows.",
@@ -13,7 +14,11 @@ export const metadata: Metadata = {
 
 const CAREERS_ICONS = [Users, Lightbulb, GraduationCap, TrendingUp];
 
-export default function CareersPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  return cmsMetadata("careers", fallbackMetadata);
+}
+
+export default async function CareersPage() {
   return (
     <PageShell>
       <PageHeader
@@ -61,6 +66,7 @@ export default function CareersPage() {
           </Reveal>
         </div>
       </section>
+      <CmsSections slug="careers" />
     </PageShell>
   );
 }

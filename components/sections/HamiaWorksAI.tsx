@@ -26,7 +26,7 @@ export function HamiaWorksAI() {
                   DIVISION OF
                 </p>
                 <p className="mt-2 font-display text-base font-semibold text-[color:var(--color-text-primary)]">
-                  Xeltrio Technologies Private Limited
+                  Xeltrio Technologies
                 </p>
               </div>
             </Reveal>

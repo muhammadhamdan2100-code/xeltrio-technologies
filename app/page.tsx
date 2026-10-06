@@ -13,8 +13,9 @@ import { Technology } from "@/components/sections/Technology";
 import { ProductPreview } from "@/components/sections/ProductPreview";
 import { HamiaWorksAI } from "@/components/sections/HamiaWorksAI";
 import { Roadmap } from "@/components/sections/Roadmap";
+import { CmsSections } from "@/components/cms/CmsPage";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <Nav />
@@ -32,6 +33,7 @@ export default function Home() {
         <ProductPreview />
         <HamiaWorksAI />
         <Roadmap />
+        <CmsSections slug="home" />
       </main>
       <Footer />
     </>

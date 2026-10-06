@@ -1,0 +1,33 @@
+SUPABASE ROW COUNTS — project yparzhgzhpwewyrjhqud — captured 2026-10-05 via SQL Editor (read-only UNION ALL count queries)
+Run 1 (12 rows): announcements 0 | brand_pages 0 | careers_jobs 0 | company 1 | contact_messages 1 | content_items 32 | faqs 5 | footer_links 0 | founder 1 | hm_signature_fragrances 4 | industries 9 | legal_pages 4
+Run 2 (11 rows, monaco setValue): navigation_items 0 | news_articles 0 | newsletter_subscribers 0 | press_releases 0 | product_categories 3 | products 12 | profiles 2 | resources 0 | roadmap_steps 10 | solutions 9 | testimonials 0
+
+Full table (23 public tables):
+announcements 0
+brand_pages 0
+careers_jobs 0
+company 1
+contact_messages 1
+content_items 32
+faqs 5
+footer_links 0
+founder 1
+hm_signature_fragrances 4
+industries 9
+legal_pages 4
+navigation_items 0
+news_articles 0
+newsletter_subscribers 0
+press_releases 0
+product_categories 3
+products 12
+profiles 2
+resources 0
+roadmap_steps 10
+solutions 9
+testimonials 0
+
+Total seeded rows across all tables: 101
+Empty tables (12): announcements, brand_pages, careers_jobs, footer_links, navigation_items, news_articles, newsletter_subscribers, press_releases, resources, testimonials
+(That is 10 empty — recount: announcements, brand_pages, careers_jobs, footer_links, navigation_items, news_articles, newsletter_subscribers, press_releases, resources, testimonials = 10 empty)
+Seeded tables (13): company 1, contact_messages 1, content_items 32, faqs 5, founder 1, hm_signature_fragrances 4, industries 9, legal_pages 4, product_categories 3, products 12, profiles 2, roadmap_steps 10, solutions 9

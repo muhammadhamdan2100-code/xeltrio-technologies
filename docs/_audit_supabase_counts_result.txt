@@ -1,0 +1,147 @@
+uid=11_1 RootWebArea "Untitled query | SQL Editor | xeltrio technologies Project | xeltrio technologies Org | Supabase" focusable focused url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/sql/6ae5a4c9-0e5d-464d-9e2b-df5bb21e453c"
+  uid=11_2 link "Skip to content" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/sql/6ae5a4c9-0e5d-464d-9e2b-df5bb21e453c#main"
+    uid=11_3 StaticText "Skip to content"
+  uid=11_4 banner
+    uid=11_5 link "Supabase Back to organization home" focusable url="https://supabase.com/dashboard/org/uxjfqzxpxteeysjcrzko"
+      uid=11_6 image "Supabase" url="https://supabase.com/dashboard/img/supabase-logo.svg"
+      uid=11_7 StaticText "Back to organization home"
+    uid=11_8 link "xeltrio technologies Org FREE" focusable url="https://supabase.com/dashboard/org/uxjfqzxpxteeysjcrzko"
+      uid=11_9 StaticText "xeltrio technologies Org"
+      uid=11_10 StaticText "FREE"
+    uid=11_11 button "Show organizations" expandable focusable hasPopup="dialog" invalid="false"
+    uid=11_12 link "xeltrio technologies Project" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud"
+      uid=11_13 StaticText "xeltrio technologies Project"
+    uid=11_14 button "Show organization projects" expandable focusable hasPopup="dialog" invalid="false"
+    uid=11_15 link "main PRODUCTION" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud"
+      uid=11_16 StaticText "main"
+      uid=11_17 StaticText "PRODUCTION"
+    uid=11_18 button "Show project branches" expandable focusable hasPopup="dialog" invalid="false"
+    uid=11_19 button "Connect" focusable invalid="false"
+    uid=11_20 button "Feedback" expandable focusable hasPopup="dialog" invalid="false"
+    uid=11_21 button "Search..." expandable focusable hasPopup="dialog" invalid="false"
+    uid=11_22 button "Help" focusable invalid="false"
+    uid=11_23 button "Advisor Center" focusable invalid="false"
+    uid=11_24 button "SQL Editor" focusable invalid="false"
+    uid=11_25 button "AI Assistant" focusable invalid="false"
+    uid=11_26 button "muhammadhamdan2100-code" expandable focusable hasPopup="menu" invalid="false"
+  uid=11_27 navigation
+    uid=11_28 link "Project Overview" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud"
+      uid=11_29 StaticText "Project Overview"
+    uid=11_30 link "Table Editor" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/editor"
+      uid=11_31 StaticText "Table Editor"
+    uid=11_32 link "SQL Editor" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/sql"
+      uid=11_33 StaticText "SQL Editor"
+    uid=11_34 link "Database" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/database/schemas"
+      uid=11_35 StaticText "Database"
+    uid=11_36 link "Authentication" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/auth/users"
+      uid=11_37 StaticText "Authentication"
+    uid=11_38 link "Storage" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/storage/files"
+      uid=11_39 StaticText "Storage"
+    uid=11_40 link "Edge Functions" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/functions"
+      uid=11_41 StaticText "Edge Functions"
+    uid=11_42 link "Compute NEW" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/compute"
+      uid=11_43 StaticText "Compute"
+      uid=11_44 StaticText "NEW"
+    uid=11_45 link "Realtime" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/realtime/inspector"
+      uid=11_46 StaticText "Realtime"
+    uid=11_47 link "Advisors" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/advisors/security"
+      uid=11_48 StaticText "Advisors"
+    uid=11_49 link "Observability" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/observability"
+      uid=11_50 StaticText "Observability"
+    uid=11_51 link "Logs" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/logs"
+      uid=11_52 StaticText "Logs"
+    uid=11_53 link "Integrations" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/integrations"
+      uid=11_54 StaticText "Integrations"
+    uid=11_55 link "Project Settings" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/settings/general"
+      uid=11_56 StaticText "Project Settings"
+  uid=11_57 button "Sidebar control" expandable focusable hasPopup="menu" invalid="false"
+  uid=11_58 main focusable
+    uid=11_59 heading "SQL Editor" level="4"
+    uid=11_60 StaticText "Search queries"
+    uid=11_61 textbox "Search queries..." editable="plaintext" focusable invalid="false" settable
+    uid=11_62 button expandable focusable hasPopup="menu" invalid="false"
+    uid=11_63 button "Create a new query" expandable focusable hasPopup="menu" invalid="false"
+    uid=11_64 button "SHARED" description="Shared" expandable focusable invalid="false"
+    uid=11_65 button "FAVORITES" description="Favorites" expandable focusable invalid="false"
+    uid=11_66 button "PRIVATE" controls="radix-_r_5l_" expandable expanded focusable invalid="false"
+    uid=11_67 tree "private-snippets" multiselectable orientation="vertical"
+    uid=11_68 button "LOGS" description="Logs" expandable focusable invalid="false"
+    uid=11_69 button "REFERENCE" controls="radix-_r_5n_" description="Reference" expandable expanded focusable invalid="false"
+    uid=11_70 link "Templates" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/sql/templates"
+      uid=11_71 StaticText "Templates"
+    uid=11_72 link "Examples" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/sql/examples"
+      uid=11_73 StaticText "Examples"
+    uid=11_74 link "View running queries" focusable url="https://supabase.com/dashboard/project/yparzhgzhpwewyrjhqud/observability/connections"
+      uid=11_75 StaticText "View running queries"
+    uid=11_76 separator controls="panel-left" focusable orientation="vertical" settable value="28.256000518798828" valuemax="56.512001037597656" valuemin="28.256000518798828"
+    uid=11_77 main
+      uid=11_78 button "Collapse sidebar" focusable invalid="false"
+      uid=11_79 tablist focusable orientation="horizontal"
+        uid=11_80 tab "Untitled query" focusable invalid="false" selectable selected
+        uid=11_81 button "Close tab" focusable invalid="false"
+        uid=11_82 button focusable invalid="false"
+      uid=11_83 StaticText "Unsaved edits"
+      uid=11_84 button "More actions" expandable focusable hasPopup="menu" invalid="false"
+      uid=11_85 button "Query source: Database" expandable focusable hasPopup="menu" invalid="false"
+      uid=11_86 button "Save" focusable invalid="false"
+      uid=11_87 button "Run" focusable invalid="false"
+      uid=11_88 textbox "Editor content" autocomplete="both" editable="plaintext" focusable focused invalid="false" multiline roledescription="editor" settable value="ress_releases', count(*) from press_releases union all select 'announcements', count(*) from announcements union all select 'careers_jobs', count(*) from careers_jobs union all select 'navigation_items', count(*) from navigation_items union all select 'footer_links', count(*) from footer_links union all select 'resources', count(*) from resources union all select 'brand_pages', count(*) from brand_pages union all select 'hm_signature_fragrances', count(*) from hm_signature_fragrances order by t;"
+      uid=11_89 separator controls="_r_76_" focusable orientation="horizontal" settable value="50" valuemax="70" valuemin="30"
+      uid=11_90 tablist focusable orientation="horizontal"
+        uid=11_91 tab "Results" focusable invalid="false" selectable selected
+        uid=11_92 tab "Chart" focusable invalid="false" selectable
+        uid=11_93 button "23 rows(Limited to only 100 rows)" focusable invalid="false"
+        uid=11_94 button "Export" expandable focusable hasPopup="menu" invalid="false"
+      uid=11_95 columnheader "t" focusable selectable
+        uid=11_96 StaticText "t"
+      uid=11_97 columnheader "n" focusable selectable
+        uid=11_98 StaticText "n"
+      uid=11_99 gridcell "announcements" focusable readonly selectable
+        uid=11_100 StaticText "announcements"
+      uid=11_101 gridcell "0" focusable readonly selectable
+        uid=11_102 StaticText "0"
+      uid=11_103 gridcell "brand_pages" focusable readonly selectable
+        uid=11_104 StaticText "brand_pages"
+      uid=11_105 gridcell "0" focusable readonly selectable
+        uid=11_106 StaticText "0"
+      uid=11_107 gridcell "careers_jobs" focusable readonly selectable
+        uid=11_108 StaticText "careers_jobs"
+      uid=11_109 gridcell "0" focusable readonly selectable
+        uid=11_110 StaticText "0"
+      uid=11_111 gridcell "company" focusable readonly selectable
+        uid=11_112 StaticText "company"
+      uid=11_113 gridcell "1" focusable readonly selectable
+        uid=11_114 StaticText "1"
+      uid=11_115 gridcell "contact_messages" focusable readonly selectable
+        uid=11_116 StaticText "contact_messages"
+      uid=11_117 gridcell "1" focusable readonly selectable
+        uid=11_118 StaticText "1"
+      uid=11_119 gridcell "content_items" focusable readonly selectable
+        uid=11_120 StaticText "content_items"
+      uid=11_121 gridcell "32" focusable readonly selectable
+        uid=11_122 StaticText "32"
+      uid=11_123 gridcell "faqs" focusable readonly selectable
+        uid=11_124 StaticText "faqs"
+      uid=11_125 gridcell "5" focusable readonly selectable
+        uid=11_126 StaticText "5"
+      uid=11_127 gridcell "footer_links" focusable readonly selectable
+        uid=11_128 StaticText "footer_links"
+      uid=11_129 gridcell "0" focusable readonly selectable
+        uid=11_130 StaticText "0"
+      uid=11_131 gridcell "founder" focusable readonly selectable
+        uid=11_132 StaticText "founder"
+      uid=11_133 gridcell "1" focusable readonly selectable
+        uid=11_134 StaticText "1"
+      uid=11_135 gridcell "hm_signature_fragrances" focusable readonly selectable
+        uid=11_136 StaticText "hm_signature_fragrances"
+      uid=11_137 gridcell "4" focusable readonly selectable
+        uid=11_138 StaticText "4"
+      uid=11_139 gridcell "industries" focusable readonly selectable
+        uid=11_140 StaticText "industries"
+      uid=11_141 gridcell "9" focusable readonly selectable
+        uid=11_142 StaticText "9"
+      uid=11_143 gridcell "legal_pages" focusable readonly selectable
+        uid=11_144 StaticText "legal_pages"
+      uid=11_145 gridcell "4" focusable readonly selectable
+        uid=11_146 StaticText "4"
+  uid=11_147 StaticText "SQL Editor | xeltrio technologies Project | xeltrio technologies Org | Supabase"

@@ -915,7 +915,7 @@ export const COMPANY_ROADMAP_STEPS = [
 export const FOUNDER = {
   name: "Muhammad Hamdan",
   title: "Founder & CEO",
-  company: "Xeltrio Technologies Private Limited",
+  company: "Xeltrio Technologies",
   /**
    * When empty/null, FounderPortrait renders the placeholder component
    * instead — swap this to a Supabase-hosted URL later without touching

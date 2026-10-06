@@ -77,7 +77,7 @@ export default function HamiaWorksAIPage() {
               DIVISION OF
             </span>
             <p className="mt-3 font-display text-xl font-semibold leading-snug text-[color:var(--color-text-primary)] sm:text-2xl">
-              Xeltrio Technologies Private Limited
+              Xeltrio Technologies
             </p>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[color:var(--color-text-secondary)]">
               HamiaWorks AI is where Xeltrio applies its AI expertise directly, one business at a

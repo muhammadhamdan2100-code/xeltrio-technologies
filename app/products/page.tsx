@@ -1,19 +1,24 @@
 import type { Metadata } from "next";
+import { CmsSections, cmsMetadata } from "@/components/cms/CmsPage";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { PageShell } from "@/components/layout/PageShell";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { RevealGroup, RevealItem, Reveal } from "@/components/motion/Reveal";
 import { ProductGlyph } from "@/components/ui/ProductGlyph";
-import { ECOSYSTEM_PRODUCTS, PRODUCT_LEARN_MORE_HREF } from "@/lib/constants";
+import { ECOSYSTEM_PRODUCTS } from "@/lib/constants";
 
-export const metadata: Metadata = {
+const fallbackMetadata: Metadata = {
   title: "Products — Xeltrio Technologies",
   description:
     "The full Xeltrio ecosystem — BusinessOS and the growing family of AI-native operating systems for enterprise, from EducationOS to LogisticsOS.",
 };
 
-export default function ProductsPage() {
+export async function generateMetadata(): Promise<Metadata> {
+  return cmsMetadata("products", fallbackMetadata);
+}
+
+export default async function ProductsPage() {
   return (
     <PageShell>
       <PageHeader
@@ -62,6 +67,7 @@ export default function ProductsPage() {
           </Reveal>
         </div>
       </section>
+      <CmsSections slug="products" />
     </PageShell>
   );
 }
